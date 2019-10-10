@@ -7,9 +7,10 @@ import ysa.activation_functions as acf
 
 
 class Homework():
-	"""
-	Homework class is written for artificial neural networks lecture's 1st homework
-	"""
+    """
+    Homework class is written for artificial neural networks' first  homework
+    """
+
     def __init__(self):
         self.x = acf.np.arange(-5.0, 5.0, 0.1)
         self.plot()
@@ -17,9 +18,9 @@ class Homework():
         self.show()
 
     def plot(self):
-		"""
-		The method that plots activation functions			
-		"""
+        """
+        The method that plots activation functions
+        """
         plt.plot(self.x, acf.sigmoid(self.x), label='sigmoid')
         plt.plot(self.x, acf.linear(self.x, 0.1), label='linear (c = 0.1)')
         plt.plot(self.x, acf.tanh(self.x), label='tanh')
@@ -29,9 +30,9 @@ class Homework():
         plt.plot(self.x, acf.swish(self.x), label='swish (β = 1)')
 
     def set_options():
-		"""
-		The method that sets options
-		"""
+        """
+        The method that sets options
+        """
         plt.title('Homework 1')
         plt.xlabel('x')
         plt.ylabel('y')
@@ -40,10 +41,11 @@ class Homework():
         plt.gca().set_ylim(-1.1, 2)
 
     def show():
-		"""
-		The method that shows the graph
-		"""
+        """
+        The method that shows the graph
+        """
         plt.show()
 
-# Run Homework
+
+# run homework
 homework = Homework()
